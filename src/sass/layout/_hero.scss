@@ -2,7 +2,7 @@
     margin-right: auto;
     margin-left: auto;
 
-    &__title-zahl {
+    &__title-number {
         display: flex;
         justify-content: space-between;
         padding-top: 50px;
@@ -25,7 +25,6 @@
         width: 247px;
 
         font-family: 'Seymour One', sans-serif;
-        font-style: normal;
         font-size: 26px;
         line-height: calc(33 / 26);
         letter-spacing: 0.04em;
@@ -47,7 +46,8 @@
         }
     }
 
-    &-zahl__list {
+    &-number__list {
+        @extend%list;
         display: block;
         margin-right: 0;
         text-align: end;
@@ -57,7 +57,7 @@
         }
     }
 
-    &-zahl__item {
+    &-number__item {
         font-family: 'Montserrat', sans-serif;
         font-weight: 900;
         font-size: 28px;
@@ -77,7 +77,7 @@
         }
     }
 
-    &-zahl__item:not(:last-child) {
+    &-number__item:not(:last-child) {
         margin-bottom: 20px;
 
         @media screen and (min-width: 1200px) {
@@ -85,7 +85,7 @@
         }
     }
 
-    &-zahl__text {
+    &-number__text {
         margin-top: 4px;
 
         font-family: 'Montserrat', sans-serif;
@@ -114,6 +114,7 @@
     }
 
     &__list {
+        @extend%list;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -124,6 +125,7 @@
     }
 
     &__link {
+        @extend%link;
         font-weight: 600;
         font-size: 12px;
         line-height: calc(15 / 12);
@@ -173,9 +175,6 @@
 
             font-size: 14px;
             line-height: 140%;
-
-            color: #FCFCFC;
-
         }
     }
     
@@ -183,6 +182,14 @@
         fill: #ffffff;
         background-color:  #84A178;;
         border: none;
+
+        @media screen and (min-width: 768px) {
+            margin-top: 12px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-top: 24px;
+        }
     }
 
 }
