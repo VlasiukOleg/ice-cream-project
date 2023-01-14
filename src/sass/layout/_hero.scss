@@ -2,6 +2,30 @@
     margin-right: auto;
     margin-left: auto;
 
+    &__box {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    left: 0;
+    height: 453px;
+
+        @media screen and (min-width: 480px) {
+            width: 480px;
+            height: 357px;
+        }
+
+        @media screen and (min-width: 768px) {
+            width: 768px;
+            height: 349px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 1200px;
+            height: 591px;
+        }
+    }
+
     &__title-number {
         display: flex;
         justify-content: space-between;
@@ -191,140 +215,106 @@
             margin-top: 24px;
         }
     }
-}
 
-.box {
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    top: 0;
-    left: 0;
-    height: 453px;
-
-    @media screen and (min-width: 480px) {
-        width: 480px;
-        height: 357px;
-    }
-
-    @media screen and (min-width: 768px) {
-        width: 768px;
-        height: 349px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        width: 1200px;
-        height: 591px;
-    }
-}
-
-.hero__plate-image {
+    &__plate-image {
     position: absolute;
 
-    @media screen and (max-width: 768px) {
-       display: none;
-    }
-
-    @media screen and (min-width: 768px) {
-        width: 152px;
-        bottom: 12px;
-        left: 32px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        bottom: 65px;
-        left: 16px;
-        width: 225px;
-    }
-}
-
-.hero__dots-image {
-    position: absolute;
-
-    @media screen and (min-width: 768px) {
+        @media screen and (max-width: 768px) {
         display: none;
+        }
+
+        @media screen and (min-width: 768px) {
+            width: 152px;
+            bottom: 12px;
+            left: 32px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            bottom: 65px;
+            left: 16px;
+            width: 225px;
+        }
     }
 
-    @media screen and (min-width: 1200px) {
-        bottom: 0;
-        left: 16px;
-        width: 1200px;
-    }
-}
+    &__dots-image {
+    position: absolute;
 
-.hero__ice-cream-image {
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+
+        @media screen and (min-width: 1200px) {
+            bottom: 0;
+            left: 16px;
+            width: 1200px;
+        }
+    }
+
+    &__ice-cream-image {
     position: absolute;
     width: 177px;
     left: 83px;
     bottom: 0;
 
-    @media screen and (min-width: 480px) {
-        width: 218px;
-        left: 242px;
-        bottom: 0;
+        @media screen and (min-width: 480px) {
+            width: 218px;
+            left: 242px;
+        }
+
+        @media screen and (min-width: 768px) {
+            left: 408px;
+            width: 268px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            left: 652px;
+            width: 456px;
+
+        }
     }
 
-    @media screen and (min-width: 768px) {
-        left: 408px;
-        bottom: 0;
-        width: 268px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        left: 652px;
-        bottom: 0;
-        width: 456px;
-
-    }
-}
-
-.hero__dots-left-image {
+    &__dots-left-image {
     position: absolute;
     left: 0;
     bottom: 0;
     width: 106px;
 
-    @media screen and (min-width: 480px) {
-        left: 159px;
-        bottom: 0;
-        width: 110px;
+        @media screen and (min-width: 480px) {
+            left: 159px;
+            width: 110px;
+        }
+
+        @media screen and (min-width: 768px) {
+            left: 0;
+            width: 110px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            display: none;
+
+        }
     }
 
-    @media screen and (min-width: 768px) {
-        left: 0;
-        bottom: 0;
-        width: 110px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        display: none;
-
-    }
-}
-
-.hero__dots-right-image {
+    &__dots-right-image {
     position: absolute;
     width: 126px;
     right: 0;
     bottom: 0;
 
-    @media screen and (min-width: 480px) {
-        right: 0;
-        bottom: 0;
-        width: 130px;
-    }
+        @media screen and (min-width: 480px) {
+            width: 130px;
+        }
 
-    @media screen and (min-width: 768px) {
-        right: 0;
-        bottom: 0;
-        width: 182px;
-    }
+        @media screen and (min-width: 768px) {
+            width: 182px;
+        }
 
-    @media screen and (min-width: 1200px) {
-        display: none;
+        @media screen and (min-width: 1200px) {
+            display: none;
 
+        }
     }
 }
-
 
 
 // .canvas {
