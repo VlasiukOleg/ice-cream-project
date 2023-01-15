@@ -56,7 +56,7 @@
 
         display: block;
 
-        color: #FCFCFC;
+        color: $color-white-secondary;
 
         @media screen and (min-width: 1200px) {
             width: 367px;
@@ -66,7 +66,7 @@
             letter-spacing: 0.04em;
             text-transform: uppercase;
 
-            color: #FCFCFC;
+            color: $color-white-secondary;
         }
     }
 
@@ -88,7 +88,7 @@
         line-height: calc(34 / 28);
         letter-spacing: 0.04em;
 
-        color: #131313;
+        color: $color-black-primary;
 
         @media screen and (min-width: 1200px) {
             font-size: 46px;
@@ -96,7 +96,7 @@
            
             letter-spacing: 0.04em;
 
-            color: #131313;
+            color: $color-black-primary;
 
         }
     }
@@ -123,7 +123,7 @@
             font-size: 14px;
             line-height: calc(17 / 14);
 
-            color: #FCFCFC;
+            color: $color-white-secondary;
         }
     }
 
@@ -157,15 +157,15 @@
 
         text-decoration-line: underline;
 
-        color: var(--logo-color);
+        color: $color-accent;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
         &:hover {
-            color: #0A8817;
+            color: $color-button-hover;
         }
 
         &:focus {
-            color: #ffffff;
+            color: $color-white-primary;
         }
 
         &:disabled {
@@ -186,7 +186,7 @@
         font-size: 12px;
         line-height: calc(14 / 12);
 
-        color: #FCFCFC;
+        color: $color-white-secondary;
 
         @media screen and (max-width: 768px) {
             display: none;
@@ -203,8 +203,8 @@
     }
     
     &-lorem__btn {
-        fill: #ffffff;
-        background-color:  #84A178;;
+        fill: $color-white-primary;
+        background-color:  $bgcolor-primary;
         border: none;
 
         @media screen and (min-width: 768px) {
@@ -217,7 +217,7 @@
     }
 
     &__plate-image {
-    position: absolute;
+        position: absolute;
 
         @media screen and (max-width: 768px) {
         display: none;
@@ -237,7 +237,7 @@
     }
 
     &__dots-image {
-    position: absolute;
+        position: absolute;
 
         @media screen and (min-width: 768px) {
             display: none;
@@ -251,10 +251,10 @@
     }
 
     &__ice-cream-image {
-    position: absolute;
-    width: 177px;
-    left: 83px;
-    bottom: 0;
+        position: absolute;
+        width: 177px;
+        left: 83px;
+        bottom: 0;
 
         @media screen and (min-width: 480px) {
             width: 218px;
@@ -274,10 +274,10 @@
     }
 
     &__dots-left-image {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 106px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 106px;
 
         @media screen and (min-width: 480px) {
             left: 159px;
@@ -296,10 +296,10 @@
     }
 
     &__dots-right-image {
-    position: absolute;
-    width: 126px;
-    right: 0;
-    bottom: 0;
+        position: absolute;
+        width: 126px;
+        right: 0;
+        bottom: 0;  
 
         @media screen and (min-width: 480px) {
             width: 130px;
@@ -316,101 +316,101 @@
     }
 }
 
-// @media screen and (min-width: 480px) {
-//     .hero__dots-right-image {
-//         background-image: url('../images/hero/ice-cream-punkt-right-480.png');
-//     }
+@media screen and (min-width: 480px) {
+    .hero__dots-right-image {
+        background-image: url('../images/hero/ice-cream-dots-right-480.png');
+    }
 
-//     @media screen and (min-resolution: 2dppx) {
-//         .hero__dots-right-image {background-image: url('../images/hero/ice-cream-punkt-right-480@2x.png');
-//         }
-//     }
+    @media screen and (min-resolution: 2dppx) {
+        .hero__dots-right-image {background-image: url('../images/hero/ice-cream-dots-right-480@2x.png');
+        }
+    }
 
-//     .hero__dots-left-image {
-//         background-image: url('../images/hero/ice-cream-punkt-left-480.png');
-//     }
+    .hero__dots-left-image {
+        background-image: url('../images/hero/ice-cream-dots-left-480.png');
+    }
 
-//     @media screen and (min-resolution: 2dppx) {
-//         .hero__dots-left-image {background-image: url('../images/hero/ice-cream-punkt-left-480@2x.png');
-//         }
-//     }
+    @media screen and (min-resolution: 2dppx) {
+        .hero__dots-left-image {background-image: url('../images/hero/ice-cream-dots-left-480@2x.png');
+        }
+    }
 
-//     .hero__ice-cream-image {
-//         background-image: url('../images/hero/ice-crem-mob-480.png');
-//     }
+    .hero__ice-cream-image {
+        background-image: url('../images/hero/ice-cream-mob-480.png');
+    }
 
-//     @media screen and (min-resolution: 2dppx) {
-//         .ice-cream-image {background-image: url('../images/hero/ice-crem-mob-480@2x.png');
-//         }
-//     }
-// }
+    @media screen and (min-resolution: 2dppx) {
+        .hero__ice-cream-image {background-image: url('../images/hero/ice-cream-mob-480@2x.png');
+        }
+    }
+}
 
-// @media screen and (min-width: 768px) {
-//     .hero__dots-right-image {
-//         background-image: url('../images/hero/ice-crem-punkt-right-768.png');
-//     }
+@media screen and (min-width: 768px) {
+    .hero__dots-right-image {
+        background-image: url('../images/hero/ice-cream-dots-right-768.png');
+    }
 
-//     @media screen and (min-resolution: 2dppx) {
-//         .hero__dots-right-image {background-image: url('../images/hero/ice-crem-punkt-right-768@2x.png');
-//         }
-//     }
+    @media screen and (min-resolution: 2dppx) {
+        .hero__dots-right-image {background-image: url('../images/hero/ice-cream-dots-right-768@2x.png');
+        }
+    }
 
-//     .hero__dots-left-image {
-//         background-image: url('../images/hero/ice-crem-punkt-left-768.png');
-//     }
+    .hero__dots-left-image {
+        background-image: url('../images/hero/ice-cream-dots-left-768.png');
+    }
 
-//     @media screen and (min-resolution: 2dppx) {
-//         .hero__dots-left-image {background-image: url('../images/hero/ice-crem-punkt-left-768@2x.png');
-//         }
-//     }
+    @media screen and (min-resolution: 2dppx) {
+        .hero__dots-left-image {background-image: url('../images/hero/ice-cream-dots-left-768@2x.png');
+        }
+    }
 
-//     .hero__plate-image {
-//         background-image: url('../images/hero/hero-teller.png');
-//     }
+    .hero__plate-image {
+        background-image: url('../images/hero/hero-plate.png');
+    }
 
-//     @media screen and (min-resolution: 2dppx) {
-//         .hero__plate-image {background-image: url('../images/hero/hero-teller@2x.png');
-//         }
-//     }
+    @media screen and (min-resolution: 2dppx) {
+        .hero__plate-image {background-image: url('../images/hero/hero-plate@2x.png');
+        }
+    }
 
-//     .hero__ice-cream-image {
-//         background-image: url('../images/hero/ice-crem-tab.png');
-//     }
+    .hero__ice-cream-image {
+        background-image: url('../images/hero/ice-cream-tab.png');
+    }
 
-//     @media screen and (min-resolution: 2dppx) {
-//         .ice-cream-image {background-image: url('../images/hero/ice-crem-tab@2x.png');
-//         }
-//     }
-// }
+    @media screen and (min-resolution: 2dppx) {
+        .hero__ice-cream-image {background-image: url('../images/hero/ice-cream-tab@2x.png');
+        }
+    }
+}
 
-// @media screen and (min-width: 1200px) {
-//     .hero__dots-image {
-//         background-image: url('../images/hero/ice-cream-punkt-desctop.png');
-//     }
+@media screen and (min-width: 1200px) {
+    .hero__dots-image {
+        background-image: url('../images/hero/ice-cream-dots-desktop.png');
+    }
 
-//     @media screen and (min-resolution: 2dppx) {
-//         .hero__dots-image {background-image: url('../images/hero/ice-cream-punkt-desctop@2x.png');
-//         }
-//     }
+    @media screen and (min-resolution: 2dppx) {
+        .hero__dots-image {background-image: url('../images/hero/ice-cream-dots-desktop@2x.png');
+        }
+    }
 
-//     .hero__plate-image {
-//         background-image: url('../images/hero/hero-teller-desktop.png');
-//     }
+    .hero__plate-image {
+        background-image: url('../images/hero/hero-plate-desktop.png');
+    }
 
-//     @media screen and (min-resolution: 2dppx) {
-//         .hero__plate-image {background-image: url('../images/hero/hero-teller-desktop@2x.png');
-//         }
-//     }
+    @media screen and (min-resolution: 2dppx) {
+        .hero__plate-image {background-image: url('../images/hero/hero-plate-desktop@2x.png');
+        }
+    }
 
-//     .hero__ice-cream-image {
-//         background-image: url('../images/hero/ice-crem-desktop.png');
-//     }
+    .hero__ice-cream-image {
+        background-image: url('../images/hero/ice-cream-desktop.png');
+    }
 
-//     @media screen and (min-resolution: 2dppx) {
-//         .ice-cream-image {background-image: url('../images/hero/ice-crem-desktop@2x.png');
-//         }
-//     }
-// }
+    @media screen and (min-resolution: 2dppx) {
+        .ice-cream-image {background-image: url('../images/hero/ice-cream-desktop@2x.png');
+        }
+    }
+}
 
 
 // .canvas {
