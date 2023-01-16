@@ -1,0 +1,2 @@
+const e=document.querySelectorAll("#slides .slide");let l=0;setInterval((function(){e[l].className="slide",l=(l+1)%e.length,e[l].className="slide showing"}),5e3);(()=>{const e={openModalBtn:document.querySelector("[data-modal-fran-open]"),closeModalBtn:document.querySelector("[data-modal-fran-close]"),modal:document.querySelector("[data-modal-fran]")};function l(){e.modal.classList.toggle("is-hidden")}e.openModalBtn.addEventListener("click",l),e.closeModalBtn.addEventListener("click",l)})();
+//# sourceMappingURL=index.4d94cfa8.js.map
