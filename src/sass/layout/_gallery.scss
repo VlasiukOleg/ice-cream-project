@@ -1,5 +1,9 @@
 .gallery {
-  // padding-bottom: 200px;
+  position: relative;
+  height: 130px;
+  // padding: 0px;
+  margin: 0px auto;
+  list-style-type: none;
 }
 
 .gallery__container {
@@ -19,6 +23,7 @@
 .gallery__img {
   object-fit: cover;
   border-radius: 8px;
+  height: 130px;
 
   @include mobile {
     height: 204px;
@@ -37,14 +42,6 @@
 
 img.gallery__img {
   margin-right: 0;
-}
-
-.gallery {
-  position: relative;
-  height: 130px;
-  padding: 0px;
-  margin: 0px auto;
-  list-style-type: none;
 }
 
 .slide {
